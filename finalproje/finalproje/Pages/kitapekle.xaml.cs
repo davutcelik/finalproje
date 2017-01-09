@@ -22,6 +22,7 @@ namespace finalproje.Pages
     /// </summary>
     public partial class kitapekle : UserControl
     {
+        MySqlConnection baglanti = new MySqlConnection("Server=localhost;Port=3306;Database=test;Uid=root;Pwd=;Convert Zero Datetime=True;Allow Zero Datetime=True;");
         public kitapekle()
         {
             InitializeComponent();
@@ -29,7 +30,13 @@ namespace finalproje.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            baglanti.Open();
+            MySqlCommand kitapekle = new MySqlCommand("INSERT INTO kütüphane(kitapadi,kitapyazari,kitaptürü,yayinevi,kitapcilt,yayintarihi) values('" + txtad.Text + "','" + txtyazar.Text + "','" + txttür.Text + "','" + txtyayinevi.Text + "','" + txtcilt.Text + "','" + txttarih.Text + "')", baglanti);
+            kitapekle.ExecuteNonQuery();
+            kitapekle.Dispose();
+            baglanti.Close();
+            MessageBox.Show("kütüphaneye kitap ekleme yapıldı");
         }
     }
 }
+

@@ -35,7 +35,7 @@
         <TextBox Name="txtad" Grid.Column="1" Grid.Row="2" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
         <TextBox Name="txtyazar" Grid.Column="1" Grid.Row="3" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
         <TextBox Name="txttür" Grid.Column="1" Grid.Row="4" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
-        <TextBox Name="txtyayınevi" Grid.Column="1" Grid.Row="5" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
+        <TextBox Name="txtyayinevi" Grid.Column="1" Grid.Row="5" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
         <TextBox Name="txtcilt" Grid.Column="1" Grid.Row="6" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
         <TextBox Name="txttarih" Grid.Column="1" Grid.Row="7" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
 
