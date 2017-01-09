@@ -21,8 +21,8 @@
         <Label Grid.Column="0" Grid.Row="1" Width="85" Margin="2"  FontWeight="Bold" FontSize="10" HorizontalAlignment="Right" VerticalAlignment="Center"   Content="        Kullanıcı Adı:"></Label>
         <Label Grid.Column="0" Grid.Row="2" Width="85" Margin="2"  FontWeight="Bold" FontSize="10" VerticalAlignment="Center"  Content= "                    Şifre:"></Label>
 
-        <TextBox Name="txtkad" Grid.Column="1" Grid.Row="1" Width="160" Margin="2" HorizontalAlignment="Center" Background="Azure" FontWeight="Bold" ></TextBox>
-        <PasswordBox Name="txtsifre" Grid.Column="1" Grid.Row="2" Width="160" Margin="2" HorizontalAlignment="Center" Background="Azure" FontWeight="Bold"  ></PasswordBox>
+        <TextBox Name="txtkad" Grid.Column="1" Grid.Row="1" Width="160" Margin="2" HorizontalAlignment="Center" Background="Azure" FontWeight="Bold" FontSize="10" />
+        <PasswordBox Name="txtsifre" Grid.Column="1" Grid.Row="2" Width="160" Margin="2" HorizontalAlignment="Center" Background="Azure" FontWeight="Bold" FontSize="10"  ></PasswordBox>
         <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"  Width="246" Height="25"  Background="Azure" Margin="5"  FontWeight="Bold" FontSize="10" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" >GİRİŞ</Button>
 
     </Grid>
