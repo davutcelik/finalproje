@@ -12,7 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using MySql.Data;
+using MySql.Data.MySqlClient;
 namespace finalproje.Pages
 {
     /// <summary>
@@ -23,6 +24,11 @@ namespace finalproje.Pages
         public kitapkirala()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
