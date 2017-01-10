@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,20 @@ namespace finalproje.Pages
     /// </summary>
     public partial class kitapkirala : UserControl
     {
+        MySqlConnection baglanti = new MySqlConnection("Server=localhost;Port=3306;Database=test;Uid=root;Pwd=;Convert Zero Datetime=True;Allow Zero Datetime=True;");
         public kitapkirala()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            baglanti.Open();
+            MySqlCommand kirala = new MySqlCommand("UPDATE kütüphane set  kiralikgün='" + txtgün.Text + "', müsteriad='" + txtmusteriad.Text + "',müsterisoyad='" + txtmusterisoyad.Text + "',müsterino=" + txtmusterinumara.Text +"',müsteritc='" + txtmusteritc.Text + "' where sire='" + txtseri.Text + "", baglanti);
+            kirala.ExecuteNonQuery();
+            kirala.Dispose();
+            baglanti.Close();
+            MessageBox.Show("kitap kiralama işlemi tamamlandı yapıldı");
         }
     }
 }
