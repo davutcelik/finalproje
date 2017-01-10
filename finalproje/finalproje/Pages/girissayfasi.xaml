@@ -12,6 +12,6 @@
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <DataGrid Name="DATA" Grid.Row="0"></DataGrid>
-        <Button Name="kiralamasayfası" Grid.Row="1" Click="kiralamasayfası_Click"> KİRALAMA</Button>
+        <Button Name="kiralamasayfası" Grid.Row="1" Click="kiralamasayfası_Click">KİTAP KİRALAMAK İÇİN TIKLAYINIZ</Button>
     </Grid>
 </UserControl>

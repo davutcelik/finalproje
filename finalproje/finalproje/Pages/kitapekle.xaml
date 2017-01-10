@@ -17,29 +17,30 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">SERİ NO :</Label>
-        <Label Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">KİTAP ADI  :</Label>
-        <Label Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">KİTAP YAZARI  :</Label>
-        <Label Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">KİTAP TÜRÜ  :</Label>
-        <Label Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">YAYINEVİ  :</Label>
-        <Label Grid.Column="0" Grid.Row="6" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">CİLT  :</Label>
-        <Label Grid.Column="0" Grid.Row="7" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">YAYIN TARİHİ  :</Label>
+        <Label Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">KİTAP ADI  :</Label>
+        <Label Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">KİTAP YAZARI  :</Label>
+        <Label Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">KİTAP TÜRÜ  :</Label>
+        <Label Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">YAYINEVİ  :</Label>
+        <Label Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">CİLT  :</Label>
+        <Label Grid.Column="0" Grid.Row="6" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">YAYIN TARİHİ  :</Label>
+        <Label Grid.Column="0" Grid.Row="7" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">KİTAP İD:</Label>
+       
+        <TextBox Name="txtad" Grid.Column="1" Grid.Row="1" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
+        <TextBox Name="txtyazar" Grid.Column="1" Grid.Row="2" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
+        <TextBox Name="txttür" Grid.Column="1" Grid.Row="3" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
+        <TextBox Name="txtyayinevi" Grid.Column="1" Grid.Row="4" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
+        <TextBox Name="txtcilt" Grid.Column="1" Grid.Row="5" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
+        <TextBox Name="txttarih" Grid.Column="1" Grid.Row="6" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
+        <TextBox Name="txtkitapid" Grid.Column="1" Grid.Row="7" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
 
-        <TextBox Name="txtseri" Grid.Column="1" Grid.Row="1" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"/>
-        <TextBox Name="txtad" Grid.Column="1" Grid.Row="2" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
-        <TextBox Name="txtyazar" Grid.Column="1" Grid.Row="3" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
-        <TextBox Name="txttür" Grid.Column="1" Grid.Row="4" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
-        <TextBox Name="txtyayinevi" Grid.Column="1" Grid.Row="5" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
-        <TextBox Name="txtcilt" Grid.Column="1" Grid.Row="6" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
-        <TextBox Name="txttarih" Grid.Column="1" Grid.Row="7" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
-
-        <Button Grid.Column="0" Grid.Row="8"  Grid.ColumnSpan="2"  Height="26" Margin="0,10,0,0" Background="#FFCCCCCC" Click="Button_Click" >Kitap Ekle</Button>
+        <Button Grid.Column="0" Grid.Row="8"  Grid.ColumnSpan="2"  Height="26" Margin="0,10,0,0" Background="#FFCCCCCC" Click="Button_Click" >Kütüphaneye Kitap Ekle</Button>
 
 
     </Grid>

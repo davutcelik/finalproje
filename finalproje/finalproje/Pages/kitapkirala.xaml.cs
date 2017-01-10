@@ -30,7 +30,7 @@ namespace finalproje.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             baglanti.Open();
-            MySqlCommand kirala = new MySqlCommand("UPDATE kütüphane set  kiralikgün='" + txtgün.Text + "', müsteriad='" + txtmusteriad.Text + "',müsterisoyad='" + txtmusterisoyad.Text + "',müsterino=" + txtmusterinumara.Text +"',müsteritc='" + txtmusteritc.Text + "' where sire='" + txtseri.Text + "", baglanti);
+            MySqlCommand kirala = new MySqlCommand("INSERT INTO kiralik set kitapid='" + txtkitapid.Text + "',  kiralikgün='" + txtgün.Text + "', müsteriad='" + txtmusteriad.Text + "',müsterisoyad='" + txtmusterisoyad.Text + "',müsterino=" + txtmusterinumara.Text +",müsteritc=" + txtmusteritc.Text + " ", baglanti);
             kirala.ExecuteNonQuery();
             kirala.Dispose();
             baglanti.Close();
