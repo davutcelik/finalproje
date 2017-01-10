@@ -28,3 +28,7 @@ C:\Users\windows 10\Desktop\gorsel prog\finalproje\finalproje\finalproje\bin\Deb
 C:\Users\windows 10\Desktop\gorsel prog\finalproje\finalproje\finalproje\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\windows 10\Desktop\gorsel prog\finalproje\finalproje\finalproje\bin\Debug\MySql.Fabric.Plugin.dll
 C:\Users\windows 10\Desktop\gorsel prog\finalproje\finalproje\finalproje\bin\Debug\MySql.Web.dll
+C:\Users\windows 10\Desktop\gorsel prog\finalproje\finalproje\finalproje\obj\Debug\Pages\girissayfasi.baml
+C:\Users\windows 10\Desktop\gorsel prog\finalproje\finalproje\finalproje\obj\Debug\Pages\girissayfasi.g.cs
+C:\Users\windows 10\Desktop\gorsel prog\finalproje\finalproje\finalproje\obj\Debug\Pages\kitapkirala.baml
+C:\Users\windows 10\Desktop\gorsel prog\finalproje\finalproje\finalproje\obj\Debug\Pages\kitapkirala.g.cs

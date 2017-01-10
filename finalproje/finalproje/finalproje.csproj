@@ -86,7 +86,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\girissayfasi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\kitapekle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\kitapkirala.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -98,8 +106,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Compile Include="Pages\girissayfasi.xaml.cs">
+      <DependentUpon>girissayfasi.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\kitapekle.xaml.cs">
       <DependentUpon>kitapekle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\kitapkirala.xaml.cs">
+      <DependentUpon>kitapkirala.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\kitapsil.xaml.cs">
       <DependentUpon>kitapsil.xaml</DependentUpon>
