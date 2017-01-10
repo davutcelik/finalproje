@@ -36,7 +36,7 @@ namespace finalproje.Pages
                 kirala.ExecuteNonQuery();
                 kirala.Dispose();
                 baglanti.Close();
-                MessageBox.Show("kitap kiralama işlemi tamamlandı yapıldı");
+                MessageBox.Show("kitap kiralama işlemi tamamlandı.");
             }
             catch {
                 MessageBox.Show("İSTENİLEN id'li KİTAP BAŞKA KULLANICIYA KİRALANMIŞ DURUMDADIR.");

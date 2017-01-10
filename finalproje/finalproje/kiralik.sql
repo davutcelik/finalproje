@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 10 Oca 2017, 16:05:10
+-- Üretim Zamanı: 10 Oca 2017, 18:29:06
 -- Sunucu sürümü: 10.1.16-MariaDB
 -- PHP Sürümü: 5.6.24
 
@@ -28,20 +28,32 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `kiralik` (
   `kitapid` int(11) NOT NULL,
-  `kiralikgün` int(11) NOT NULL,
-  `müsteriad` varchar(50) NOT NULL,
-  `müsterisoyad` varchar(50) NOT NULL,
-  `müsterino` int(11) NOT NULL,
-  `müsteritc` int(11) NOT NULL
+  `kiralikgün` int(11) DEFAULT NULL,
+  `müsteriad` varchar(50) DEFAULT NULL,
+  `müsterisoyad` varchar(50) DEFAULT NULL,
+  `müsterino` int(11) DEFAULT NULL,
+  `müsteritc` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Tablo döküm verisi `kiralik`
+-- Dökümü yapılmış tablolar için indeksler
 --
 
-INSERT INTO `kiralik` (`kitapid`, `kiralikgün`, `müsteriad`, `müsterisoyad`, `müsterino`, `müsteritc`) VALUES
-(1, 5, 'A', 'S', 1, 2);
+--
+-- Tablo için indeksler `kiralik`
+--
+ALTER TABLE `kiralik`
+  ADD PRIMARY KEY (`kitapid`);
 
+--
+-- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
+--
+
+--
+-- Tablo için AUTO_INCREMENT değeri `kiralik`
+--
+ALTER TABLE `kiralik`
+  MODIFY `kitapid` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
