@@ -27,7 +27,7 @@ namespace finalproje.Pages
         public girissayfasi()
         {
             InitializeComponent();
-            MySqlCommand goster = new MySqlCommand("Select kitapadi,kitapyazari,kitaptürü,yayinevi,kitapcilt from kütüphane ", baglanti);
+            MySqlCommand goster = new MySqlCommand("Select sire,kitapadi,kitapyazari,kitaptürü,yayinevi,kitapcilt from kutuphane ", baglanti);
             MySqlDataAdapter ad = new MySqlDataAdapter(goster);
             DataTable ta = new DataTable();
             ad.Fill(ta);

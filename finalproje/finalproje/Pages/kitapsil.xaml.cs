@@ -32,7 +32,7 @@ namespace finalproje.Pages
             MySqlConnection baglanti = new MySqlConnection("Server=localhost;Port=3306;Database=test;Uid=root;Pwd=;Convert Zero Datetime=True;Allow Zero Datetime=True;");
             baglanti.Open();
 
-            MySqlCommand kitapsil = new MySqlCommand("delete from kütüphane where sire='" + sil.Text + "'", baglanti);
+            MySqlCommand kitapsil = new MySqlCommand("delete from kutuphane where sire='" + sil.Text + "'", baglanti);
             MySqlDataAdapter adabtor2 = new MySqlDataAdapter(kitapsil);
             kitapsil.ExecuteNonQuery();
             kitapsil.Dispose();

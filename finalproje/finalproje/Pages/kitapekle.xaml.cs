@@ -30,12 +30,15 @@ namespace finalproje.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+          
             baglanti.Open();
-            MySqlCommand kitapekle = new MySqlCommand("INSERT INTO kütüphane(kitapadi,kitapyazari,kitaptürü,yayinevi,kitapcilt,yayintarihi,kitapid) values('" + txtad.Text + "','" + txtyazar.Text + "','" + txttür.Text + "','" + txtyayinevi.Text + "','" + txtcilt.Text + "','" + txttarih.Text + "','" + txtkitapid.Text + "')", baglanti);
+            MySqlCommand kitapekle = new MySqlCommand("INSERT INTO kutuphane(kitapadi,kitapyazari,kitaptürü,yayinevi,kitapcilt,yayintarihi,sire) values('" + txtad.Text + "','" + txtyazar.Text + "','" + txttür.Text + "','" + txtyayinevi.Text + "','" + txtcilt.Text + "','" + txttarih.Text + "'," + txtkitapid.Text + ")", baglanti);
             kitapekle.ExecuteNonQuery();
             kitapekle.Dispose();
             baglanti.Close();
             MessageBox.Show("kütüphaneye kitap ekleme yapıldı");
+          
+         
         }
     }
 }

@@ -35,8 +35,14 @@ namespace finalproje.Pages
                 MySqlCommand kirala = new MySqlCommand("INSERT INTO kiralik set kitapid='" + txtkitapid.Text + "',  kiralikgün='" + txtgün.Text + "', müsteriad='" + txtmusteriad.Text + "',müsterisoyad='" + txtmusterisoyad.Text + "',müsterino=" + txtmusterinumara.Text + ",müsteritc=" + txtmusteritc.Text + " ", baglanti);
                 kirala.ExecuteNonQuery();
                 kirala.Dispose();
-                baglanti.Close();
+              
                 MessageBox.Show("kitap kiralama işlemi tamamlandı.");
+
+                MySqlCommand asd2 = new MySqlCommand("delete  from kutuphane where sire ='" + txtkitapid.Text + "'", baglanti);
+               
+                asd2.ExecuteNonQuery();
+                asd2.Dispose();
+                baglanti.Close();
             }
             catch {
                 MessageBox.Show("İSTENİLEN id'li KİTAP BAŞKA KULLANICIYA KİRALANMIŞ DURUMDADIR.");
