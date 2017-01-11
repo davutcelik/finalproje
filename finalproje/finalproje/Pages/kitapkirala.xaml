@@ -6,7 +6,7 @@
              xmlns:mui="http://firstfloorsoftware.com/ModernUI"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid >
+    <Grid Height="500" Width="325" >
 
         <Grid.RowDefinitions>
 
@@ -18,7 +18,11 @@
             <RowDefinition Height="AUTO"></RowDefinition>
             <RowDefinition Height="AUTO"></RowDefinition>
             <RowDefinition Height="AUTO"></RowDefinition>
-            
+            <RowDefinition Height="AUTO"></RowDefinition>
+            <RowDefinition Height="AUTO"></RowDefinition>
+            <RowDefinition Height="AUTO"></RowDefinition>
+            <RowDefinition Height="AUTO"></RowDefinition>
+
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
@@ -39,5 +43,11 @@
         <TextBox Name="txtmusterinumara" Grid.Column="1" Grid.Row="5" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
         <TextBox Name="txtmusteritc" Grid.Column="1" Grid.Row="6" Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
         <Button  Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" Height="26" Margin="0,10,0,0" Background="#FFCCCCCC" Click="Button_Click">KİTAP Kirala</Button>
+
+
+        <Label Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" Margin="20" FontSize="20" VerticalAlignment="Center" FontWeight="Bold" TextBlock.TextAlignment="Center" Content="Kitap Kiralık Kayıt Silme İşlemi"></Label>
+        <TextBox Name="txtkitapsilid" Grid.Column="5" Grid.Row="9"  Margin="0,2,0,0" Height="24" VerticalAlignment="Center" Background="#FFE0F3F1"></TextBox>
+        <Label Grid.Column="0" Grid.Row="9" HorizontalAlignment="Right" Margin="0,2,0,0" VerticalAlignment="Center" FontWeight="Bold">KİTAP İD  :</Label>
+        <Button  Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2" Height="26" Margin="0,10,0,0" Background="#FFCCCCCC" Click="Button_Click_1">Kiralanmış Kaydı Sil</Button>
     </Grid>
 </UserControl>

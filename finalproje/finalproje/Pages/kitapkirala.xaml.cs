@@ -49,5 +49,26 @@ namespace finalproje.Pages
                 txtkitapid.Text = "";
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                MySqlConnection baglanti = new MySqlConnection("Server=localhost;Port=3306;Database=test;Uid=root;Pwd=;Convert Zero Datetime=True;Allow Zero Datetime=True;");
+                baglanti.Open();
+                MySqlCommand kitapsil = new MySqlCommand("delete from kiralik where kitapid='" + txtkitapsilid.Text + "'", baglanti);
+                MySqlDataAdapter adabtor2 = new MySqlDataAdapter(kitapsil);
+                kitapsil.ExecuteNonQuery();
+                kitapsil.Dispose();
+
+                baglanti.Close();
+                MessageBox.Show(" kiralık kitap kütüphaneden silindi.");
+            }
+            catch
+            {
+
+                MessageBox.Show("hatalı id girdiniz.");
+            }
+        }
     }
 }

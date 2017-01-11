@@ -29,9 +29,9 @@ namespace finalproje.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            try { 
             MySqlConnection baglanti = new MySqlConnection("Server=localhost;Port=3306;Database=test;Uid=root;Pwd=;Convert Zero Datetime=True;Allow Zero Datetime=True;");
             baglanti.Open();
-
             MySqlCommand kitapsil = new MySqlCommand("delete from kutuphane where sire='" + sil.Text + "'", baglanti);
             MySqlDataAdapter adabtor2 = new MySqlDataAdapter(kitapsil);
             kitapsil.ExecuteNonQuery();
@@ -39,7 +39,12 @@ namespace finalproje.Pages
 
             baglanti.Close();
             MessageBox.Show("sira numaralı kitap kütüphaneden silindi");
+            }
+            catch
+            {
 
+                MessageBox.Show("hatalı");
+            }
         }
     }
 }

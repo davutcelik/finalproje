@@ -29,8 +29,19 @@ namespace finalproje.Pages
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (txtkad.Text == "DAVUT" && txtsifre.Password == "004")
+            string ad = txtkad.Text;
+            string sifre = txtsifre.Password;
+            MySqlConnection baglanti = new MySqlConnection("Server = localhost; Database = test; Uid = root; Pwd=;");
+            baglanti.Open();
+
+            MySqlCommand girisyap = new MySqlCommand("SELECT * FROM uyelik where kullaniciad='" + txtkad.Text + "' and sifre='" + Convert.ToString(txtsifre.Password) + "'", baglanti);
+            MySqlDataReader dr = girisyap.ExecuteReader();
+
+
+            if (dr.Read())
             {
+
+
                 FirstFloor.ModernUI.Presentation.LinkGroup menuler = new FirstFloor.ModernUI.Presentation.LinkGroup();
 
                 FirstFloor.ModernUI.Presentation.Link menuekle = new FirstFloor.ModernUI.Presentation.Link();
@@ -54,9 +65,8 @@ namespace finalproje.Pages
                 ab.MenuLinkGroups.Clear();
                 ab.MenuLinkGroups.Add(menuler);
             }
-            else
-            {
-                MessageBox.Show("Hatalı Giriş Denemesi");
+            else {
+                MessageBox.Show("Kullanıcı adı veya şifre yanlış");
             }
         }
     }
